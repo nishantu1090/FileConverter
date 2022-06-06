@@ -1,0 +1,8 @@
+<body>
+<h2>Download File!</h2>
+</body>
+{% for file in files %}
+    <ul>
+    <li>File<a href="{{ file.file.url }}" download="{{ file.file.url }}">Download</a></li>
+    </ul>
+{% endfor %}

@@ -1,11 +1,14 @@
-{% if name %}
-<h1>Hello {{ name }}</h1>
-{% else %}
-    <h2>Hello world</h2>
-{% endif %}
-
+<h1> Upload the file to Convert</h1>
+<body>
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     <input type="file" name="file">
-    <input type="submit">
+    <input type="submit" name="convert">
 </form>
+<div>
+
+
+
+</div>
+</body>
+
